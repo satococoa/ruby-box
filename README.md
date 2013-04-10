@@ -12,6 +12,8 @@ CentOS 6.3 に git, rbenv, ruby-build, ruby 等、すぐに ruby で開発がで
 3. ターミナル (コマンドプロンプト) から以下のコマンドを実行
 
 ```
+git clone git://github.com/satococoa/ruby-box.git
+cd ruby-box
 vagrant up
 ```
 
