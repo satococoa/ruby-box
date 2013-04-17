@@ -19,7 +19,7 @@ vagrant up
 
 ## How to use
 
-- VM を起動: `vagrant halt`
+- VM を起動: `vagrant up`
 - VM を終了: `vagrant halt`
 - VM をサスペンド (一時停止): `vagrant suspend`
 - VM を再開: `vagrant resume`
