@@ -87,6 +87,7 @@ Vagrant.configure("2") do |config|
     chef.add_recipe 'sqlite'
     chef.add_recipe 'nodejs::install_from_binary'
     chef.add_recipe 'rbenv'
+    chef.add_recipe 'mysql::server'
 
     # You may also specify custom JSON attributes:
     chef.json = {
@@ -97,6 +98,11 @@ Vagrant.configure("2") do |config|
       },
       "rbenv" => {
         "version" => "1.9.3-p392"
+      },
+      "mysql" => {
+        "server_debian_password" => "password",
+        "server_root_password" => "password",
+        "server_repl_password" => "password"
       }
     }
   end
