@@ -19,5 +19,24 @@ vagrant up
 
 ## How to use
 
-VM にログイン: `vagrant ssh`
+- VM を起動: `vagrant halt`
+- VM を終了: `vagrant halt`
+- VM をサスペンド (一時停止): `vagrant suspend`
+- VM を再開: `vagrant resume`
+- VM を削除: `vagrant destroy` * VM の中身が全部消えます。
+- VM にログイン: `vagrant ssh`
 
+VM 内の `/vagrant` ディレクトリとホストのカレントディレクトリが自動的に共有されています。  
+ホストから VM にアクセスするときは `192.168.33.20` の IP アドレスが設定されています。
+
+なので、rails server してアクセスするときは http://192.168.33.20:3000/ にアクセスすれば OK です。
+
+
+## How to update
+
+レシピが追加されたときなどの更新の仕方。
+
+```
+git pull
+vagrant provision
+```
