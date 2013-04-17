@@ -1,3 +1,0 @@
-[submodule "chef-repo"]
-	path = chef-repo
-	url = git@github.com:satococoa/chef-repo.git
