@@ -97,7 +97,7 @@ Vagrant.configure("2") do |config|
         "group" => "vagrant"
       },
       "rbenv" => {
-        "version" => "1.9.3-p392"
+        "version" => "1.9.3-p429"
       },
       "mysql" => {
         "server_debian_password" => "password",
