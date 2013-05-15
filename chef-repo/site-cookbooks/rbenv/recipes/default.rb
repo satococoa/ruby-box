@@ -56,6 +56,9 @@ bash "install ruby-#{node['rbenv']['version']}" do
 
   code <<-EOC
     source ~/.bashrc
+    cd ~/.rbenv/plugins/ruby-build
+    git pull
+    cd ~
     rbenv install #{node['rbenv']['version']}
     rbenv global #{node['rbenv']['version']}
     rbenv versions
